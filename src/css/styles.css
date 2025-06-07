@@ -27,33 +27,26 @@ a {
     border-color: #4E75FF;
     outline: none;
 }
-.btn {
+button[data-start] {
     width: 75px;
     height: 40px;
     padding: 8px 16px;
     border-radius: 8px;
     border: none;
-    background-color: CFCFCF;
+    background-color: #CFCFCF;
     font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: 0.04em;
-        color: #989898;
-        cursor: pointer;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    color: #989898;
+    cursor: not-allowed;
+    transition: background-color 0.3s ease;
 }
-.is-active {
-    width: 75px;
-        height: 40px;
-        padding: 8px 16px;
-        border-radius: 8px;
-        border: none;
-        font-weight: 500;
-            font-size: 16px;
-            line-height: 24px;
-            letter-spacing: 0.04em;
-            cursor: pointer;
-    color: #fff;
+
+button[data-start]:enabled {
     background-color: #4E75FF;
+    color: #fff;
+    cursor: pointer;
 }
 .timer {
     display: flex;
